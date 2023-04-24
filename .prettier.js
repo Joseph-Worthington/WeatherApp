@@ -1,8 +1,9 @@
 module.exports = {
     bracketSoacing : true,
-    singleQuote : true,
+    singleQuote : false,
     tabWidth: 4,
     useTabs: false,
     trailingComma: 'none',
-    semi: false,
-};
+    semi: true,
+    endOfLine: 'auto',
+}
