@@ -68,9 +68,7 @@ const UpcomingWeather = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "hsla(4, 86%, 58%, 0.92)",
     flex: 1,
-    paddingTop: StatusBar.currentHeight || 0,
   },
   image: {
     flex: 1,
