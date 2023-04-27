@@ -1,16 +1,16 @@
 import React from "react";
 import {  Text,  View, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
+import { weatherType } from "../utilities/WeatherType";
 
 const ListItem = (props) => {
   const { dt_text, min, max, condition } = props;
   const { item, temp, date } = styles;
   return (
     <View style={item}>
-      <Feather name="cloud-rain" size={50} color="white" />
+      <Feather name={weatherType[condition].icon} size={50} color="white" />
       <Text style={date}>{dt_text}</Text>
-      <Text style={temp}>{min}</Text>
-      <Text style={temp}>{max}</Text>
+      <Text style={temp}>{`${Math.round(min)}° ${Math.round(max)}° `}</Text>
     </View>
   );
 };
